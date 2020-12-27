@@ -20,24 +20,6 @@ function Login() {
       .catch((error) => alert(error.message));
   };
 
-  const register = (e) => {
-    e.preventDefault();
-
-    //do some fancy firebase sign-up shit.
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((auth) => {
-        // if everything went smoothly without problems log this
-        console.log(auth);
-        if (auth) {
-          history.push("/");
-        }
-      })
-      .catch(
-        // if anything bad happens, alert it
-        (error) => alert(error.message)
-      );
-  };
 
   return (
     <div className="login">
@@ -80,10 +62,11 @@ function Login() {
           Sale. Please see our Privacy Notice, our Cookies Notice and our
           Interest-Based Ads
         </p>
-
-        <button className="login__registerButton" onClick={register}>
-          Create your Amazon Account
-        </button>
+        <Link to="/signup">
+          <button className="login__registerButton">
+            Create your Amazon Account
+          </button>
+        </Link>
       </div>
     </div>
   );
