@@ -8,6 +8,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Payment from "./Payment";
 import Orders from "./Orders";
+import Footer from "./Footer";
 import { Elements } from "@stripe/react-stripe-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //functions
@@ -78,6 +79,7 @@ function App() {
                         <Home />
                     </Route>
                 </Switch>
+                <Footer />
             </div>
         </Router>
     );

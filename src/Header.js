@@ -24,6 +24,7 @@ function Header() {
                     src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
                 />
             </Link>
+            
             <div className="header__search">
                 <input className="header__searchInput" type="text" />
                 <SearchIcon className="header__searchIcon" />
@@ -31,7 +32,7 @@ function Header() {
 
             <div className="header__nav">
                 {/* the logic of this condition is that, if both expression are true, return the second one */}
-                <Link to={!user && "/login"}>
+                <Link to={!user && "/login"} className="header__link">
                     <div
                         onClick={handleAuthentication}
                         className="header__option"
@@ -45,7 +46,7 @@ function Header() {
                     </div>
                 </Link>
 
-                <Link to="/orders">
+                <Link to="/orders" className="header__link">
                     <div className="header__option">
                         <span className="header__optionLineOne">Return</span>
                         <span className="header__optionLineTwo">& Orders</span>
@@ -57,7 +58,7 @@ function Header() {
                     <span className="header__optionLineTwo">Prime</span>
                 </div>
 
-                <Link to="/checkout">
+                <Link to="/checkout" className="header__link">
                     <div className="header__optionBasket">
                         <ShoppingBasketIcon />
                         <span className="header__optionLineTwo header__basketCount">

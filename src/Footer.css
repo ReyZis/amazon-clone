@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #131921;
+}
+
+.footer__credit, .footer__icon {
+    color: white;
+    margin-right: 20px;
+}
