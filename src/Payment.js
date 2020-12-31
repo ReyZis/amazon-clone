@@ -23,7 +23,6 @@ function Payment() {
     const [disabled, setDisabled] = useState(true);
     const [clientSecret, setClientSecret] = useState(true);
 
-    // this is the 
     /* useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
 
@@ -76,9 +75,8 @@ function Payment() {
             });
     }; */
 
-    // this just a fake handler that should simulate the stripe fuctionality and add the orders to the database
+    // this is just a fake handler that should simulate the stripe fuctionality and add the orders to the database
     const handleSubmit = async (event) => {
-        // do all the fancy stripe stuff
         event.preventDefault();
         setProcessing(true);
 

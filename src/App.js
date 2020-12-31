@@ -16,9 +16,8 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 
-const promise = loadStripe(
-    "pk_test_51I1jKvEZ6hfegs2uaEv5BLZfSfXBdNs5DOsqTZfCw5W8EI4357IctQcP4HfMIwCZ7BQslLFiKgifnKmJm40L3fVy00CAQ3ymEl"
-);
+//put you own publishable key
+const promise = loadStripe("MY_PUBLISHABLE_KEY");
 
 function App() {
     const [{}, disaptch] = useStateValue();

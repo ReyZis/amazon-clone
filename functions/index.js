@@ -4,9 +4,7 @@ const cors = require("cors");
 
 // the following line will hadle requiring the stripe module and connect it to the right acount using a stripe API key
 /*  const stripe = require("stripe")("MY_SECRECT_STRIPE_KEY");   */
-const stripe = require("stripe")(
-    "sk_test_51I1jKvEZ6hfegs2ueBMyT0MVQVQn07xCEcZIB7aDgVySy0rh5w6HpHa5wTt6iWdRdFGoImhDXjkOm6wiVfjDOFxV00zfetyFwN"
-);
+const stripe = require("stripe")("MY_SECRECT_STRIPE_KEY");
 
 // App config
 const app = express();
